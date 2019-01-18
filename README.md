@@ -21,7 +21,7 @@ Del lunes 21 al viernes 25 de Enero del 2019
 # Temario
 
 ### Unidad I
-__Introducción a los proyectos de investigación__
+__Introducción a la investigación reproducible__
 1. Reproducibilidad de los datos
 2. Repositorios y Documentación
 
