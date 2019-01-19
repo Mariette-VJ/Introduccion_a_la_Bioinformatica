@@ -12,7 +12,7 @@ __Investigación:__ La mayoría de la investigación que se publica recientement
 Para realizar "análisis bioinformáticos" se necesitan, implícitamente, ambas de disciplinas.
 
 ---
-####__Desafíos de la bioinformática__
+#### __Desafíos de la bioinformática__
 
 • Grandes volúmenes de información.
 • Bases de datos heterogéneas y dispersas.
@@ -24,7 +24,7 @@ Para realizar "análisis bioinformáticos" se necesitan, implícitamente, ambas 
 
 ---
 
-####__Mayor ventaja de la bioinformática: Investigación reproducible__
+#### __Mayor ventaja de la bioinformática: Investigación reproducible__
 
 Que dos personas hagan el mismo experimiento y obtengan el mismo resultado es parte del corazón mismo de la ciencia. La reproducibilidad valida el reservorio de conocimiento nuevo y permite usar las conclusiones como punto de partida para preguntas nuevas.
 
@@ -75,7 +75,7 @@ Quotes de revistas científicas:
 
 Empezando desde dónde descargar los datos biológicos
 
-####__Repositorios de datos especializados en datos genéticos:__
+#### __Repositorios de datos especializados en datos genéticos:__
 
 
 • [NCBI Gene Bank](www.ncbi.nlm.nih.gov/genbank/). Banco de datos genéticos desde la secuenciación Sanger.
@@ -135,7 +135,7 @@ Checa otros repositorios de datos [aquí](http://ropensci.github.io/reproducibil
 
 Es un repositorio de código que utiliza git para llevar un sistema de control de versiones, tiene una interfase Web pública, permite escribir/revisar código en equipo (también a través de git) y su símbolo es un gatopulpo (muy hermoso):
 
-![alt text]()
+![alt text](https://github.com/Mariette-VJ/Introduccion_a_la_Bioinformatica/blob/master/Unidad_I/images/Octocat.png)
 
 
 #### Artículos de datos
