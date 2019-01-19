@@ -15,11 +15,17 @@ Para realizar "análisis bioinformáticos" se necesitan, implícitamente, ambas 
 #### __Desafíos de la bioinformática__
 
 • Grandes volúmenes de información.
+
 • Bases de datos heterogéneas y dispersas.
+
 • Diferentes estándares tecnológicos.
+
 • Búsquedas extendidas y complejas.
+
 • Gráficas avanzadas en 2D y 3D.
+
 • Colaboración de equipos de investigadores interdisciplinarios.
+
 • Formación de código nuevo (formación de bioinformáticos que aporten a la resolución de problemas).
 
 ---
@@ -182,12 +188,14 @@ Un contenedor de software es una versión de un software (por ejemplo Linux) red
 
 Ejemplos de contenedores:
 
-Docker
+[Docker](https://docs.docker.com/)
 
-K
+![alt_text](https://github.com/Mariette-VJ/Introduccion_a_la_Bioinformatica/blob/master/Unidad_I/images/docker.png)
 
 
+[Kubernetes](https://kubernetes.io/)
 
+La documentación de Kubernetes tiene dice [las ventajas de usar contenedores](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/#why-containers)
 
 
 
