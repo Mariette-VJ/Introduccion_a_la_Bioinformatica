@@ -12,7 +12,8 @@ __Investigación:__ La mayoría de la investigación que se publica recientement
 Para realizar "análisis bioinformáticos" se necesitan, implícitamente, ambas de disciplinas. En realidad, la bioinformática implica la unión de varias disciplinas (no sólo la biología y la computación, sino también a las matemáticas y la estadística).
 
 ![alt_text](https://github.com/Mariette-VJ/Introduccion_a_la_Bioinformatica/blob/master/Unidad_I/images/boinformatics_tools_needed.png)
-_Figura 1. Inter disciplinas de la bioinformática._
+
+_Figura 1. Interdisciplinas de la bioinformática._
 
 ---
 #### __Desafíos de la bioinformática__
