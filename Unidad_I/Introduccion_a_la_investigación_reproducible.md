@@ -200,7 +200,7 @@ Ejemplos de contenedores:
 
 [Kubernetes](https://kubernetes.io/)
 
-La documentación de Kubernetes tiene dice [las ventajas de usar contenedores](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/#why-containers)
+La documentación de Kubernetes menciona [las ventajas de usar contenedores](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/#why-containers)
 
 
 
