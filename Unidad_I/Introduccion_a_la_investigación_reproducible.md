@@ -9,7 +9,11 @@ __Bioinformática:__ creación de herramientas (algoritmos, software) para soluc
 
 __Investigación:__ La mayoría de la investigación que se publica recientemente utilizó una mezcla de los programas de alguien más (sobretodo en los primeros pasos del procesamiento de datos) y funciones propias para realizar análisis más específicos. Aunque la Biología Computacional y la Bioinformática no son lo mismo, tienen mucho en común y se apreden juntas.
 
-Para realizar "análisis bioinformáticos" se necesitan, implícitamente, ambas de disciplinas.
+Para realizar "análisis bioinformáticos" se necesitan, implícitamente, ambas de disciplinas. En realidad, la bioinformática implica la unión de varias disciplinas (no sólo la biología y la computación, sino también a las matemáticas y la estadística).
+
+![alt_text](https://github.com/Mariette-VJ/Introduccion_a_la_Bioinformatica/blob/master/Unidad_I/images/boinformatics_tools_needed.png)
+
+_Figura 1. Interdisciplinas de la bioinformática._
 
 ---
 #### __Desafíos de la bioinformática__
@@ -105,10 +109,10 @@ Siguiendo por dónde encontrar los protocolos de procesamiento de los datos
 2. Los códigos deben tener comentarios escritos en un lenguaje de humano que explique a los comandos por pasos concretos. _Comentar en un archivo de texto que puede ser ejecutado siempre se realiza con "#" y permite al lector entender sin necesidad de hablar lenguaje computadora, qué es lo que hacen los comandos_
 
 Ejemplo:
-```
-# Con este comando haré que mi terminal salude al mundo
-echo "Hello World!"
-```
+
+``# Con este comando haré que mi terminal salude al mundo``
+``echo "Hello World!"``
+
 Un código abierto al público es de gran utilidad para acelerar y mejorar el procesamiento de datos, ya que gente experimentada en todo el mundo puede mejorar tu código y a la vez, puede ser usado por gente no experimentada en todo el mundo. [Openness makes software better sooner](https://www.nature.com/news/2003/030623/full/news030623-6.html)
 
 __Excusas comunes para no compartir nuestro código__
