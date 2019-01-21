@@ -118,10 +118,10 @@ Un código abierto al público es de gran utilidad para acelerar y mejorar el pr
 
 __Excusas comunes para no compartir nuestro código__
 
-• Me da pena que vean mi código
-• No quiero que otros saquen provecho de mi código
-• Me da flojera pulir mi código para publicarlo
-• Si publico mi código le van a encontrar errores y demandar correcciones o ayuda
+* Me da pena que vean mi código
+* No quiero que otros saquen provecho de mi código
+* Me da flojera pulir mi código para publicarlo
+* Si publico mi código le van a encontrar errores y demandar correcciones o ayuda
 
 Si cualquiera de estas respuestas te parecen razones válidas, checa esta lectura recomendada: [Publish your computer code: it is good enough](https://www.nature.com/news/2010/101013/full/467753a.html).
 
@@ -206,7 +206,7 @@ La documentación de Kubernetes menciona [las ventajas de usar contenedores](htt
 
 ### 1.4. ¿Cómo buscar ayuda?
 
-El objetivo de esta clase no es darte un manual completo para resolver cualquier cuestión bioinformática, sino darte las _habilidades y herramientas_ para que llegues por tí misma a las soluciones. Para esto hay una habilidad indispensable: buscar ayuda en internet. La enorme mayoría de las preguntas que te hagas sobre bioinformática y programación en general, sobre todo al principio, son las mismas dudas que tuvieron otros antes y, casi seguro las respuestas ya están en algún lugar del internet. Y si nadie ha tenido la misma duda, puedes preguntar.
+El objetivo de esta clase no es darte un manual completo para resolver cualquier cuestión bioinformática, sino darte las _habilidades y herramientas_ para que llegues por tí mismo a las soluciones. Para esto hay una habilidad indispensable: buscar ayuda en internet. La enorme mayoría de las preguntas que te hagas sobre bioinformática y programación en general, sobre todo al principio, son las mismas dudas que tuvieron otros antes y, casi seguro las respuestas ya están en algún lugar del internet. Y si nadie ha tenido la misma duda, puedes preguntar.
 
 Aprender a buscar soluciones en internet está perfectamente bien y es muy distinto a "copiar en un examen". Saber buscar ayuda e información en interent es una habilidad básica del siglo XXI.
 
