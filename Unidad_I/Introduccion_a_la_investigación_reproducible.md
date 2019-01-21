@@ -184,11 +184,11 @@ __Retos al reproducir pipelines de trabajos con tus propios datos:__ Los pipelin
 
 Para poder utilizar estos programas de _código abierto_, se necesita de un software especializado como el de GNU/Linux, lo cuál puede no ser algo trivial de instalar (_tal vez ustedes ya puedan compartirse anécdotas chistosas al respecto_). Además, al instalar un programa bioinformático es común "romper" las dependencias de otro programa o incluso tu sistema operativo.
 
-REFERENCIA DE FOTO CHISTOSA  ¿Cómo funciona el sistema de carpetas basal de Linux?
+![alt_text](images/no_bugs.png)
 
-Por eso, tener que hacer una actualización o reinstalación representa estrés en los alumnos. Una solución a nuestros miedos más grandes puede ser el uso de __contenedores de software__.
+_Ver más sobre cómo funciona el sistema de jerarquía de carpetas en Linux [aquí](https://www.linux.com/blog/learn/intro-to-linux/2018/4/linux-filesystem-explained)_
 
-Un contenedor de software es una versión de un software (por ejemplo Linux) reducida a sus componentes más básicos y disponible para ser almacenada en un servidor público al cuál tienes acceso desde tu terminal.
+Por eso, tener que hacer una actualización o reinstalación representa estrés en los alumnos. Una solución a esto puede ser el uso de __contenedores de software__. Un contenedor de software es una versión de un software (por ejemplo Linux) reducida a sus componentes más básicos y disponible para ser almacenada en un servidor público al cuál tienes acceso desde tu terminal.
 
 Ejemplos de contenedores:
 
@@ -207,12 +207,12 @@ La documentación de Kubernetes tiene dice [las ventajas de usar contenedores](h
 
 El objetivo de esta clase no es darte un manual completo para resolver cualquier cuestión bioinformática, sino darte las _habilidades y herramientas_ para que llegues por tí misma a las soluciones. Para esto hay una habilidad indispensable: buscar ayuda en internet. La enorme mayoría de las preguntas que te hagas sobre bioinformática y programación en general, sobre todo al principio, son las mismas dudas que tuvieron otros antes y, casi seguro las respuestas ya están en algún lugar del internet. Y si nadie ha tenido la misma duda, puedes preguntar.
 
-Aprender a buscar soluciones en internet está perfectamente bien y es muy distinto a copiarle a un compañero. Saber buscar ayuda e información en interent es una habilidad básica del siglo XXI.
+Aprender a buscar soluciones en internet está perfectamente bien y es muy distinto a "copiar en un examen". Saber buscar ayuda e información en interent es una habilidad básica del siglo XXI.
+
+![alt_text](image/ask4help.jpg)
 
 
-UNA REFERENCIA CHIDA
-
-
+Sitios de ayuda especializada:
 
 __[Stacksoverflow](https://stackoverflow.com/):__ es un foro de ayuda para programación en general, viene dividido por lenguajes. La gente hace preguntas y contesta. Es como un yahoo answers super pro, lxs programadorxs con muchas preguntas respondidas ganan puntos que son algo muy visible para un CV con ese perfil. Este foro es mejor para dudas de bash, R, python y no de programas genéticos.
 
