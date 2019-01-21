@@ -111,6 +111,7 @@ Siguiendo por dónde encontrar los protocolos de procesamiento de los datos
 Ejemplo:
 
 ``# Con este comando haré que mi terminal salude al mundo``
+
 ``echo "Hello World!"``
 
 Un código abierto al público es de gran utilidad para acelerar y mejorar el procesamiento de datos, ya que gente experimentada en todo el mundo puede mejorar tu código y a la vez, puede ser usado por gente no experimentada en todo el mundo. [Openness makes software better sooner](https://www.nature.com/news/2003/030623/full/news030623-6.html)
