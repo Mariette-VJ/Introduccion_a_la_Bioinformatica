@@ -210,7 +210,7 @@ El objetivo de esta clase no es darte un manual completo para resolver cualquier
 
 Aprender a buscar soluciones en internet está perfectamente bien y es muy distinto a "copiar en un examen". Saber buscar ayuda e información en interent es una habilidad básica del siglo XXI.
 
-![alt_text](image/ask4help.jpg)
+![alt_text](https://github.com/Mariette-VJ/Introduccion_a_la_Bioinformatica/blob/master/Unidad_I/images/ask4help.jpg)
 
 
 Sitios de ayuda especializada:
