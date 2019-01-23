@@ -5,17 +5,15 @@ Vamos a dirigirnos a nuestras carpetas personales, en las que hemos estado traba
 
 conectarse al servidor con ``ssh``
 
-```
-cd ~/Desktop/CURSO_BIOINFO/METAGENOMICA/
+``cd ~/Desktop/CURSO_BIOINFO/METAGENOMICA/``
 
-ls
+``ls``
 
-cd alumno
+``cd alumno``
 
-mkdir NOMBRE && cd NOMBRE
+``mkdir NOMBRE && cd NOMBRE``
 
-mkdir meta_amplicones && cd meta_amplicones
-```
+``mkdir meta_amplicones && cd meta_amplicones``
 
 
 > __Metabarcoding.__ Uses gene‐specific PCR primers to amplify DNA from a collection of organisms or from environmental DNA. Another term for amplicon sequencing.
@@ -47,9 +45,7 @@ Los reads proporcionados para trabajar, ya están procesados en calidad (recuerd
 PROBEMOS ALGUNO DE ESTOS COMANDOS: Vamos a crear una liga simbólica de los reads de amplicones con los que trabajaremos a nuestras carpetas personales (_para poder trabajar con los datos de manera cómoda sin estar usando tanta memoria copiando archivos_)
 
 
-```
-ln -s ~/Desktop/CURSO_BIOINFO/METAGENOMICA/data/meta_amplicon/* .
-```
+``ln -s ~/Desktop/CURSO_BIOINFO/METAGENOMICA/data/meta_amplicon/* .``
 
 ``gnx-tools BR_R1_paired.q15.fastq``
 
@@ -156,9 +152,13 @@ BR_pear.assembled.fasta
 
 Ahora sí, comencemos con qiime. Qiime es un programa complicado de instalar, que requiere de muchas pre instalaciones para trabajar. Si quieren ver toda la información para instalar el programa, da click [aquí](http://qiime.org/install/index.html)
 
-``source /home/ohta/miniconda2/bin/activate ~/Desktop/CURSO_BIOINFO/METAGENOMICA/qiime2-2018.11``
+```
+source ~/miniconda2/bin/activate ~/Desktop/CURSO_BIOINFO/METAGENOMICA/qiime2-2018.11
+```
 
-``identify_chimeric_seqs.py -i BR_pear.assembled.fasta -m usearch61 -o BR_checked_chimeras.rdp -r ~/Downloads/RDPClassifier_16S_trainsetNo15_rawtrainingdata/trainset15_092015.fa``
+```
+identify_chimeric_seqs.py -i BR_pear.assembled.fasta -m usearch61 -o BR_checked_chimeras.rdp -r ~/Downloads/RDPClassifier_16S_trainsetNo15_rawtrainingdata/trainset15_092015.fa
+```
 
 para salir de qiime: ``source deactivate``
 
@@ -185,7 +185,11 @@ non_chimeras.txt
 
 El siguiente paso sería el de eliminar las quimeras identificadas del archivo original (o sea, filtrar las quimeras del archivo de reads)
 
-volvamos a entrar a qiime: ``source /home/ohta/miniconda2/bin/activate ~/Desktop/CURSO_BIOINFO/METAGENOMICA/qiime2-2018.11``
+volvamos a entrar a qiime: 
+```
+source ~/miniconda2/bin/activate ~/Desktop/CURSO_BIOINFO/METAGENOMICA/qiime2-2018.11
+```
+
 ```
 filter_fasta.py -f BR_pear.assembled.fasta -o BR_non_chimeric.fasta -s BR_checked_chimeras.rdp/chimeras.txt -n
 ```
@@ -205,7 +209,9 @@ El último paso es el de predecir los OTUs.
 
 Antes de usar la detección de OTUs, hay que renombrar cada uno de los headers de las secuencias en nuestro archivo sin quimeras (o sea, que no todos digan >M0...) porque si no se cambia el nombre, todas las salidas estarán mal identificadas.
 
-``awk '/^>/{print">BR_nombre_"++i;}{print}' BR_non_chimeric.fasta | sed ':a;N;$!ba;s/\n>M/M/g' > BR_non_chimeric_header.fasta``
+```
+awk '/^>/{print">BR_nombre_"++i;}{print}' BR_non_chimeric.fasta | sed ':a;N;$!ba;s/\n>M/M/g' > BR_non_chimeric_header.fasta
+```
 
 ``less BR_non_chimeric_header.fasta``
 
@@ -215,7 +221,9 @@ __PREDICCIÓN DE OTUs CON REFERENCIA__
 
 Ahora sí, realizaremos la predicción de OTUs con referencia (la predicción se hace con una base de datos de referencia: 97_otus.fasta)
 
-``pick_open_reference_otus.py -i BR_non_chimeric_header.fasta -o otus_open_reference -r /usr/local/lib/python2.7/dist-packages/qiime_default_reference/gg_13_8_otus/rep_set/97_otus.fasta``
+```
+pick_open_reference_otus.py -i BR_non_chimeric_header.fasta -o otus_open_reference -r /usr/local/lib/python2.7/dist-packages/qiime_default_reference/gg_13_8_otus/rep_set/97_otus.fasta
+```
 
 ``ls``
 BR_checked_chimeras.rdp
