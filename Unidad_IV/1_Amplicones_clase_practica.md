@@ -58,19 +58,27 @@ BR_R2_paired.q15.fastq:286
 ``fastq_to_fasta -h``
 
 usage: fastq_to_fasta [-h] [-r] [-n] [-v] [-z] [-i INFILE] [-o OUTFILE]
+
 Part of FASTX Toolkit 0.0.14 by A. Gordon (assafgordon@gmail.com)
 
-   [-h]         = This helpful help screen.
-   [-r]         = Rename sequence identifiers to numbers.
-   [-n]         = keep sequences with unknown (N) nucleotides.
+
+[-h]         = This helpful help screen.
+
+[-r]         = Rename sequence identifiers to numbers.
+
+[-n]         = keep sequences with unknown (N) nucleotides.
                   Default is to discard such sequences.
-   [-v]         = Verbose - report number of sequences.
+
+[-v]         = Verbose - report number of sequences.
                   If [-o] is specified,  report will be printed to STDOUT.
                   If [-o] is not specified (and output goes to STDOUT),
                   report will be printed to STDERR.
-   [-z]         = Compress output with GZIP.
-   [-i INFILE]  = FASTA/Q input file. default is STDIN.
-   [-o OUTFILE] = FASTA output file. default is STDOUT.
+
+[-z]         = Compress output with GZIP.
+
+[-i INFILE]  = FASTA/Q input file. default is STDIN.
+
+[-o OUTFILE] = FASTA output file. default is STDOUT.
 
 ---
 
@@ -141,11 +149,13 @@ BR_pear.discarded.fastq:0
 
 Se han desarrollado muchos programas específicos para detectar secuencias quiméricas generadas por el PCR para amplicones. Ejemplos de estos programas son:
 
-•	Chimera Check
-•	Chimeric Alignment
-•	ChimeraSlayer (algoritmo de qiime) - necesita una base de datos (ej RDP)
-•	USEARCH (algoritmo de qiime) - necesita una base de datos (ej RDP)
-•	Perseus
+*	Chimera Check
+*	Chimeric Alignment
+*	ChimeraSlayer (algoritmo de qiime) - necesita una base de datos (ej RDP)
+*	USEARCH (algoritmo de qiime) - necesita una base de datos (ej RDP)
+*	Perseus
+
+----
 
 Para la práctica, nosotros vamos a generar una predicción de las quimeras con el programa USEARCH (usando la base de datos [RDP](https://sourceforge.net/projects/rdp-classifier/)).  a través de un programa llamado [qiime2](http://qiime.org/tutorials/chimera_checking.html)
 
