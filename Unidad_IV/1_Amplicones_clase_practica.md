@@ -7,14 +7,15 @@ conectarse al servidor con ``ssh``
 
 ```
 cd ~/Desktop/CURSO_BIOINFO/METAGENOMICA/
+
 ls
+
+cd alumno
+
+mkdir NOMBRE && cd NOMBRE
+
+mkdir meta_amplicones && cd meta_amplicones
 ```
-
-``cd alumno``
-
-``mkdir NOMBRE && cd NOMBRE``
-
-``mkdir meta_amplicones && cd meta_amplicones``
 
 
 > __Metabarcoding.__ Uses gene‐specific PCR primers to amplify DNA from a collection of organisms or from environmental DNA. Another term for amplicon sequencing.
@@ -46,7 +47,9 @@ Los reads proporcionados para trabajar, ya están procesados en calidad (recuerd
 PROBEMOS ALGUNO DE ESTOS COMANDOS: Vamos a crear una liga simbólica de los reads de amplicones con los que trabajaremos a nuestras carpetas personales (_para poder trabajar con los datos de manera cómoda sin estar usando tanta memoria copiando archivos_)
 
 
-``ln -s ~/Desktop/CURSO_BIOINFO/METAGENOMICA/data/meta_amplicon/* .``
+```
+ln -s ~/Desktop/CURSO_BIOINFO/METAGENOMICA/data/meta_amplicon/* .
+```
 
 ``gnx-tools BR_R1_paired.q15.fastq``
 
