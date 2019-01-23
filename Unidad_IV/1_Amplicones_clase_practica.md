@@ -52,6 +52,7 @@ PROBEMOS ALGUNO DE ESTOS COMANDOS: Vamos a crear una liga simbólica de los read
 ``grep -c "^@M0" BR_R*``
 
 BR_R1_paired.q15.fastq:286
+
 BR_R2_paired.q15.fastq:286
 
 
@@ -81,8 +82,11 @@ Part of FASTX Toolkit 0.0.14 by A. Gordon (assafgordon@gmail.com)
 ``ls``
 
 BR_R1_paired.q15.fasta
+
 BR_R1_paired.q15.fastq
+
 BR_R2_paired.q15.fasta
+
 BR_R2_paired.q15.fastq
 
 
@@ -105,20 +109,32 @@ Como ya se ha mencionado, un programa que hace la unión pareada de los Reads es
 ``ls``
 
 BR_pear.assembled.fastq
+
 BR_pear.unassembled.forward.fastq
+
 BR_pear.unassembled.reverse.fastq
+
 BR_pear.discarded.fastq
+
 BR_R1_paired.q15.fastq
+
 BR_R2_paired.q15.fastq
+
 BR_R1_paired.q15.fasta
+
 BR_R2_paired.q15.fasta
+
 
 ``grep -c "^@M0" BR_pear.*``
 
 BR_pear.assembled.fastq:282
+
 BR_pear.unassembled.forward.fastq:4
+
 BR_pear.unassembled.reverse.fastq:4
+
 BR_pear.discarded.fastq:0
+
 
 
 
@@ -165,17 +181,30 @@ para salir de qiime: ``source deactivate``
 ``ls``
 
 BR_checked_chimeras.rdp
+
 BR_pear.assembled.fasta
+
 
 ``ls BR_checked_chimeras.rdp/``
 
-BR_pear.assembled.fasta_chimeras_denovo.log	BR_pear.assembled.fasta_consensus_fixed.fasta
-BR_pear.assembled.fasta_chimeras_denovo.uchime	BR_pear.assembled.fasta_consensus_with_abundance.fasta
+BR_pear.assembled.fasta_chimeras_denovo.log	
+
+BR_pear.assembled.fasta_consensus_fixed.fasta
+
+BR_pear.assembled.fasta_chimeras_denovo.uchime	
+
+BR_pear.assembled.fasta_consensus_with_abundance.fasta
+
 identify_chimeric_seqs.log
+
 BR_pear.assembled.fasta_chimeras_ref.log	BR_pear.assembled.fasta_consensus_with_abundance.uc
+
 BR_pear.assembled.fasta_chimeras_ref.uchime	BR_pear.assembled.fasta_smallmem_clustered.log
+
 chimeras.txt
+
 non_chimeras.txt
+
 
 ``less chimeras.txt``
 
@@ -186,6 +215,7 @@ non_chimeras.txt
 El siguiente paso sería el de eliminar las quimeras identificadas del archivo original (o sea, filtrar las quimeras del archivo de reads)
 
 volvamos a entrar a qiime: 
+
 ```
 source ~/miniconda2/bin/activate ~/Desktop/CURSO_BIOINFO/METAGENOMICA/qiime2-2018.11
 ```
@@ -194,7 +224,7 @@ source ~/miniconda2/bin/activate ~/Desktop/CURSO_BIOINFO/METAGENOMICA/qiime2-201
 filter_fasta.py -f BR_pear.assembled.fasta -o BR_non_chimeric.fasta -s BR_checked_chimeras.rdp/chimeras.txt -n
 ```
 
-_Don’t forget to pass the -n parameter to filter_fasta.py – this tells filter_fasta.py to discard the sequences you’ve passed via -s, rather than to keep only those sequences. Then pass the resulting subalignment (non_chimeric_rep_set_aligned.fasta) in the downstream steps filter_alignment.py prior to tree-building._
+>"Don’t forget to pass the -n parameter to filter_fasta.py – this tells filter_fasta.py to discard the sequences you’ve passed via -s, rather than to keep only those sequences. Then pass the resulting subalignment (non_chimeric_rep_set_aligned.fasta) in the downstream steps filter_alignment.py prior to tree-building"
 
 ``less BR_non_chimeric.fasta``
 
@@ -227,26 +257,44 @@ pick_open_reference_otus.py -i BR_non_chimeric_header.fasta -o otus_open_referen
 
 ``ls``
 BR_checked_chimeras.rdp
+
 BR_non_chimeric.fasta
+
 BR_non_chimeric_header.fasta
+
 BR_pear.assembled.fasta
+
 otus_open_reference/
+
 
 ``cd otus_open_reference/ && ls``
 
 final_otu_map_mc2.txt
+
 log_20190122233934.txt
+
 otu_table_mc2_w_tax.biom
+
 rep_set.fna
+
 step4_otus
+
 final_otu_map.txt
+
 new_refseqs.fna
+
 otu_table_mc2_w_tax_no_pynast_failures.biom
+
 rep_set.tre
+
 uclust_assigned_taxonomy
+
 index.html
+
 otu_table_mc2.biom
+
 pynast_aligned_seqs
+
 step1_otus
 
 ---
@@ -254,9 +302,13 @@ step1_otus
 ``tail -5 final_otu_map.txt``
 
 New.CleanUp.ReferenceOTU0	BR_nombre_244M00842:113:000000000-ABGJC:1:2114:14573:15559	BR_nombre_245M00842:113:000000000-ABGJC:1:2114:14589:15569	BR_nombre_277M00842:113:000000000-ABGJC:1:2114:7718:25486	BR_nombre_273M00842:113:000000000-ABGJC:1:2114:6897:24983	BR_nombre_274M00842:113:000000000-ABGJC:1:2114:6915:24985	BR_nombre_246M00842:113:000000000-ABGJC:1:2114:14576:15580
+
 New.CleanUp.ReferenceOTU1	BR_nombre_202M00842:113:000000000-ABGJC:1:2114:12871:7772	BR_nombre_203M00842:113:000000000-ABGJC:1:2114:12889:7777	BR_nombre_204M00842:113:000000000-ABGJC:1:2114:12873:7792	BR_nombre_1M00842:113:000000000-ABGJC:1:2112:17481:4281	BR_nombre_2M00842:113:000000000-ABGJC:1:2112:17491:4296BR_nombre_3M00842:113:000000000-ABGJC:1:2112:17479:4309
+
 New.CleanUp.ReferenceOTU2	BR_nombre_222M00842:113:000000000-ABGJC:1:2114:5840:12084
+
 New.CleanUp.ReferenceOTU3	BR_nombre_95M00842:113:000000000-ABGJC:1:2113:15220:4270
+
 New.CleanUp.ReferenceOTU4	BR_nombre_152M00842:113:000000000-ABGJC:1:2113:27485:16661
 
 ---
@@ -277,25 +329,41 @@ __PREDICCION DE OTUs SIN REFERENCIA (de novo)__
 ``ls``
 
 BR_checked_chimeras.rdp
+
 BR_non_chimeric.fasta
+
 BR_non_chimeric_header.fasta
+
 BR_pear.assembled.fasta
+
 otus_open_reference/
+
 otus_denovo/
+
 
 ``cd otus_denovo/ && ls``
 
 log_20190122235759.txt
+
 otu_table.biom
+
 pynast_aligned_seqs
+
 rep_set
+
 rep_set.tre
+
 uclust_assigned_taxonomy
+
 uclust_picked_otus
+
 
 ``cd uclust_assigned_taxonomy/ && ls``
 
-BR_non_chimeric_header_rep_set_tax_assignments.log  BR_non_chimeric_header_rep_set_tax_assignments.txt
+BR_non_chimeric_header_rep_set_tax_assignments.log  
+
+BR_non_chimeric_header_rep_set_tax_assignments.txt
+
 
 ``less BR_non_chimeric_header_rep_set_tax_assignments.txt``
 
