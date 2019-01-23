@@ -10,7 +10,9 @@ Vamos a dirigirnos a nuestras carpetas personales, en las que hemos estado traba
 ``ls``
 
 ``cd alumno``
+
 ``mkdir NOMBRE && cd NOMBRE``
+
 ``mkdir meta_amplicones && cd meta_amplicones``
 
 
@@ -30,11 +32,13 @@ Los reads proporcionados para trabajar, ya están procesados en calidad (recuerd
 * gnx-tools - te ayuda a ver en la terminal, el número de reads totales que tienes, la longitud menor y mayor de tus reads y el N50
 
 ``# sudo apt-cache search gnx-tools``
+
 ``# sudo apt-get install gnx-tools``
 
 * [fastx-toolkit](http://hannonlab.cshl.edu/fastx_toolkit/) - este repositorio en realidad contiene muchos programas/comandos para hacer pasos muy específicos con los datos fastq, por ejemplo fastx_quality_stats te genera un reporte de calidad de tus datos, fastq_quality_trimmer únicamente limpia reads de baja calidad, fasq_to_fasta te ayuda a convertir archivos fastq a su versión en fasta, ya que algunos programas necesitan tus reads en fasta como input, etc)
 
 ``# sudo apt-cache search fastx-toolkit``
+
 ``# sudo apt-get fastx-toolkit``
 
 
@@ -69,7 +73,9 @@ Part of FASTX Toolkit 0.0.14 by A. Gordon (assafgordon@gmail.com)
    [-o OUTFILE] = FASTA output file. default is STDOUT.
 
 ---
+
 ``fastq_to_fasta -i BR_R1_paired.q15.fastq -o BR_R1_paired.q15.fasta``
+
 ``fastq_to_fasta -i BR_R2_paired.q15.fastq -o BR_R2_paired.q15.fasta``
 
 ``ls``
@@ -135,7 +141,9 @@ Antes de correr qiime, tenemos que converir nuestros reads pareados en fasta por
 Y vamos a mover estos archivos a una carpeta separada que llamaremos qiime
 
 ``mkdir qiime``
+
 ``mv BR_pear.assembled.fasta qiime/.``
+
 ``cd qiime && ls``
 
 BR_pear.assembled.fasta
@@ -166,14 +174,17 @@ chimeras.txt
 non_chimeras.txt
 
 ``less chimeras.txt``
+
 ``less non_chimeras.txt``
+
 ``less identify_chimeric_seqs.log``
 
 El siguiente paso sería el de eliminar las quimeras identificadas del archivo original (o sea, filtrar las quimeras del archivo de reads)
 
 volvamos a entrar a qiime: ``source /home/ohta/miniconda2/bin/activate ~/Desktop/CURSO_BIOINFO/METAGENOMICA/qiime2-2018.11``
-
-``filter_fasta.py -f BR_pear.assembled.fasta -o BR_non_chimeric.fasta -s BR_checked_chimeras.rdp/chimeras.txt -n``
+```
+filter_fasta.py -f BR_pear.assembled.fasta -o BR_non_chimeric.fasta -s BR_checked_chimeras.rdp/chimeras.txt -n
+```
 
 _Don’t forget to pass the -n parameter to filter_fasta.py – this tells filter_fasta.py to discard the sequences you’ve passed via -s, rather than to keep only those sequences. Then pass the resulting subalignment (non_chimeric_rep_set_aligned.fasta) in the downstream steps filter_alignment.py prior to tree-building._
 
