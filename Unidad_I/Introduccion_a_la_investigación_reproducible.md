@@ -111,16 +111,17 @@ Siguiendo por dónde encontrar los protocolos de procesamiento de los datos
 Ejemplo:
 
 ``# Con este comando haré que mi terminal salude al mundo``
+
 ``echo "Hello World!"``
 
 Un código abierto al público es de gran utilidad para acelerar y mejorar el procesamiento de datos, ya que gente experimentada en todo el mundo puede mejorar tu código y a la vez, puede ser usado por gente no experimentada en todo el mundo. [Openness makes software better sooner](https://www.nature.com/news/2003/030623/full/news030623-6.html)
 
 __Excusas comunes para no compartir nuestro código__
 
-• Me da pena que vean mi código
-• No quiero que otros saquen provecho de mi código
-• Me da flojera pulir mi código para publicarlo
-• Si publico mi código le van a encontrar errores y demandar correcciones o ayuda
+* Me da pena que vean mi código
+* No quiero que otros saquen provecho de mi código
+* Me da flojera pulir mi código para publicarlo
+* Si publico mi código le van a encontrar errores y demandar correcciones o ayuda
 
 Si cualquiera de estas respuestas te parecen razones válidas, checa esta lectura recomendada: [Publish your computer code: it is good enough](https://www.nature.com/news/2010/101013/full/467753a.html).
 
@@ -184,11 +185,11 @@ __Retos al reproducir pipelines de trabajos con tus propios datos:__ Los pipelin
 
 Para poder utilizar estos programas de _código abierto_, se necesita de un software especializado como el de GNU/Linux, lo cuál puede no ser algo trivial de instalar (_tal vez ustedes ya puedan compartirse anécdotas chistosas al respecto_). Además, al instalar un programa bioinformático es común "romper" las dependencias de otro programa o incluso tu sistema operativo.
 
-REFERENCIA DE FOTO CHISTOSA  ¿Cómo funciona el sistema de carpetas basal de Linux?
+![alt_text](images/no_bugs.png)
 
-Por eso, tener que hacer una actualización o reinstalación representa estrés en los alumnos. Una solución a nuestros miedos más grandes puede ser el uso de __contenedores de software__.
+_Ver más sobre cómo funciona el sistema de jerarquía de carpetas en Linux [aquí](https://www.linux.com/blog/learn/intro-to-linux/2018/4/linux-filesystem-explained)_
 
-Un contenedor de software es una versión de un software (por ejemplo Linux) reducida a sus componentes más básicos y disponible para ser almacenada en un servidor público al cuál tienes acceso desde tu terminal.
+Por eso, tener que hacer una actualización o reinstalación representa estrés en los alumnos. Una solución a esto puede ser el uso de __contenedores de software__. Un contenedor de software es una versión de un software (por ejemplo Linux) reducida a sus componentes más básicos y disponible para ser almacenada en un servidor público al cuál tienes acceso desde tu terminal.
 
 Ejemplos de contenedores:
 
@@ -199,20 +200,20 @@ Ejemplos de contenedores:
 
 [Kubernetes](https://kubernetes.io/)
 
-La documentación de Kubernetes tiene dice [las ventajas de usar contenedores](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/#why-containers)
+La documentación de Kubernetes menciona [las ventajas de usar contenedores](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/#why-containers)
 
 
 
 ### 1.4. ¿Cómo buscar ayuda?
 
-El objetivo de esta clase no es darte un manual completo para resolver cualquier cuestión bioinformática, sino darte las _habilidades y herramientas_ para que llegues por tí misma a las soluciones. Para esto hay una habilidad indispensable: buscar ayuda en internet. La enorme mayoría de las preguntas que te hagas sobre bioinformática y programación en general, sobre todo al principio, son las mismas dudas que tuvieron otros antes y, casi seguro las respuestas ya están en algún lugar del internet. Y si nadie ha tenido la misma duda, puedes preguntar.
+El objetivo de esta clase no es darte un manual completo para resolver cualquier cuestión bioinformática, sino darte las _habilidades y herramientas_ para que llegues por tí mismo a las soluciones. Para esto hay una habilidad indispensable: buscar ayuda en internet. La enorme mayoría de las preguntas que te hagas sobre bioinformática y programación en general, sobre todo al principio, son las mismas dudas que tuvieron otros antes y, casi seguro las respuestas ya están en algún lugar del internet. Y si nadie ha tenido la misma duda, puedes preguntar.
 
-Aprender a buscar soluciones en internet está perfectamente bien y es muy distinto a copiarle a un compañero. Saber buscar ayuda e información en interent es una habilidad básica del siglo XXI.
+Aprender a buscar soluciones en internet está perfectamente bien y es muy distinto a "copiar en un examen". Saber buscar ayuda e información en interent es una habilidad básica del siglo XXI.
+
+![alt_text](https://github.com/Mariette-VJ/Introduccion_a_la_Bioinformatica/blob/master/Unidad_I/images/ask4help.jpg)
 
 
-UNA REFERENCIA CHIDA
-
-
+Sitios de ayuda especializada:
 
 __[Stacksoverflow](https://stackoverflow.com/):__ es un foro de ayuda para programación en general, viene dividido por lenguajes. La gente hace preguntas y contesta. Es como un yahoo answers super pro, lxs programadorxs con muchas preguntas respondidas ganan puntos que son algo muy visible para un CV con ese perfil. Este foro es mejor para dudas de bash, R, python y no de programas genéticos.
 
