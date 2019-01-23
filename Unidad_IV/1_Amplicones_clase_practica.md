@@ -3,11 +3,12 @@
 Antes de empezar la práctica, prepararemos nuestra carpeta de trabajo
 Vamos a dirigirnos a nuestras carpetas personales, en las que hemos estado trabajando
 
-``conectarse al servidor con ssh``
+conectarse al servidor con ``ssh``
 
-``cd ~/Desktop/CURSO_BIOINFO/METAGENOMICA/``
-
-``ls``
+```
+cd ~/Desktop/CURSO_BIOINFO/METAGENOMICA/
+ls
+```
 
 ``cd alumno``
 
