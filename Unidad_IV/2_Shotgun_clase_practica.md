@@ -552,7 +552,7 @@ __ANOTACIÓN DE GENES / BASE DE DATOS DE KEGG:__
 
 Para pedir un proyecto de anotación a GhostKOALA, se necesita subir el archivo de amino ácidos en formato fasta (gut*.aa) de salida de MetaGeneMark, así que lo descargaremos en nuestras computadoras:
 
-``scp SERVIDOR:~/Desktop/CURSO_BIOINFO/METAGENOMICA/alumnos/NOMBRE/meta_shotgun/ORFs/gut1.* .``
+``scp SERVIDOR:~/Desktop/CURSO_BIOINFO/METAGENOMICA/alumnos/NOMBRE/meta_shotgun/orfs/gut1.* .``
 
 Y abriremos la página del link adjunto arriba, cargaremos el archivo .aa y someteremos un proyecto con nuestros correos electrónicos. Generalmente tardan un día, aprox, en mandarte tus resultados.
 
