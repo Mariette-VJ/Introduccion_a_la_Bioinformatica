@@ -71,7 +71,7 @@ gut2_R2.fastq:100000
 
 >Recuerden que el orden de los pasos sí va a afectar el producto. Para propósitos académicos, vamos a seguir todos los pasos de la metodología:
 
->Haremos una unión de los reads tipo PE y, con la salida de esos reads, haremos la anotación taxonómica. Después, haremos un ensamble de los reads, validaremos el ensamble y usaremos los contigs para repetir la anotación taxonómica y hacer una anotación funcional.
+>Haremos una unión de los reads tipo PE y, con la salida de esos reads, haremos la anotación taxonómica. Después, haremos un ensamble de los reads, validaremos el ensamble y usaremos los contigs para hacer una anotación funcional (aunque ten en cuenta que igual se podría repetir la anotación taxonómica pero con los contigs).
 
 
 #### Pareado de lecturas
@@ -194,7 +194,7 @@ input2.tar.bz2
 ---
 
 
-#### Predicción y anotación taxonómica (¿quién está ahí?)
+#### Predicción y anotación taxonómica (¿quién está ahí?) con reads
 
 __Para la anotación taxonómica usaremos el programa [MetaPhlAn2](https://bitbucket.org/biobakery/metaphlan2)__
 
@@ -303,62 +303,131 @@ Concatenar las tablas de abundancias con un programa de metaphlan (el número de
 > k__Bacteria|p__Firmicutes|c__Bacilli|o__Bacillales      7.48295 5.83979
 > k__Bacteria|p__Firmicutes|c__Bacilli|o__Bacillales|f__Staphylococcaceae 7.48295 5.83979
 
+---
 
+Por último, nos saldremos de la carpeta de pear (regresaremos a la carpeta de meta_shotgun)
 
-#### Ensamble 
+``cd ../..``
 
-__ ¿HACEMOS ENSAMBLE O NO HACEMOS ENSAMBLE? ¿ENSAMBLE DE NOVO O CON REFERENCIA?__
+``pwd``
 
-Dado a que no esperamos un gen específico (como era el caso de los amplicones), sino un pedacerío del genoma de muchos organismos__, la mayoría no descritos en base de datos__, la estrategia de tener las secuencias más largas antes de la anotación, genera una confianza de anotación mayor (_¿por qué?_).
+#### Ensamble
+
+Hay que recordar que no esperamos un gen específico (como era el caso de los amplicones) ni tampoco un genoma específico, sino un pedacerío del genoma de muchos organismos__, la mayoría no descritos en base de datos__. Tener secuencias más largas antes de la anotación, a través de un ensamble... o anotar con reads tiene sus ventajas y desventajas (_Figura 2_).
 
 ![alt_text](images/assembly_vs_raw_annotate.png)
 
+_Figura 2. Ventajas y desventajas de anotaciones con reads o con ensambles_
 
 
-La estrategia que se elija, va a depender totalmente en  la pregunta que se quiere contestar y, para algunas situaciones específicas, los ensambles con referencia podrían ser una buena idea... pero hablando a grandes rasgos, dado a que todo el propósito de la metagenómica. Sin embargo, el paso de realizar un ensamble (sobretodo cuando se elige realizar de forma _de novo_) también arrastra un nivel de error. Por esta razón, muchas veces se trabaja con los reads limpios y unidos (_¿recuerdan PEAR, el programa para unir reads tipo paired end?_) y muchas otras se trabaja con contigs (lecturas más largas).
+__Generaremos un ensamble con [megahit](http://www.metagenomics.wiki/tools/assembly/megahit):__
 
-__El día de hoy usaremos megahit para ensamblar PE reads ya limpios__
+para la primera muestra:
 
-``wget DATOS_A_ANALIZAR.gz``
-``descomprimir datos_limpios``
+```
+megahit -1 gut1_R1.fastq -2 gut1_R2.fastq --k-min 51 --k-max 127 -o gut1_assembly
+```
 
+y para la segunda muestra:
 
-Prepararemos una carpeta para el ensamble y haremos una liga simbólica a los reads en nuestra carpeta de trabajo de ensamble
-
-``mkdir assemble && cd assemble``
-``ln  -s ../datos_limpios .``
-
-Ahora correremos [megahit](http://www.metagenomics.wiki/tools/assembly/megahit) con los siguientes argumentos:
-
-``path_al_programa/megahit kjsdcgyakvdjbkcnkjsgvdbhcnjxdfvhcbsjx``
-
-min_length (longitud mínima) de blah
+```
+megahit -1 gut2_R1.fastq -2 gut2_R2.fastq --k-min 51 --k-max 127 -o gut2_assembly
+```
 
 Dejemos correr al programa y cuando termine, veamos el resultado del ensamble
 
-``cd megahit``
-``less final.contigs``
+``less gut1_assembly/final.contigs``
 
+``less gut2_assembly/final.contigs``
 
-__ El siguiente paso será el de eliminar las secuencias que estén muy cortas__
+Vamos a crear una carpeta donde guardaremos las salidas de los ensambles
+
+``mkdir megahit``
+
+``mv gut1_assembly/ megahit/.``
+
+``mv gut2_assembly/ megahit/.``
+
+Y copiaremos el archivo de contigs finales a la carpeta de trabajo de meta_shotgun (cambiando sus nombres para reconocerlos)
+
+``cp megahit/gut1_assembly/final.contigs.fa gut1.contigs.fa``
+
+``cp megahit/gut2_assembly/final.contigs.fa gut2.contigs.fa``
+
+``ls``
+
+gut1.contigs.fa
+
+gut1_R1.fastq
+
+gut1_R2.fastq
+
+gut2.contigs.fa
+
+gut2_R1.fastq
+
+gut2_R2.fastq
+
+megahit/
+
+pear/
+
+---
+
+__ El siguiente paso será el de eliminar los contigs estén muy cortos__
 
 Haremos un filtro de contigs, eliminando aquellos con una longitud menor a 500 pb. Para lo anterior, usaremos un script que habrá que copiar a la carpeta en la que estamos parados (donde están nuestros contigs finales)
 
-``cp path_al_programa/filter.pl .``
-``perl filter.pl 500 final.contigs``
+``cp ~/Desktop/CURSO_BIOINFO/METAGENOMICA/assem_filter.pl .``
+
+``perl assem_filter.pl gut1.contigs.fa 500``
+
+``perl assem_filter.pl gut2.contigs.fa 500``
+
+``ls``
+
+assem_filter.pl
+
+filtered_500_gut1.contigs.fa
+
+gut1.contigs.fa
+
+gut1_R1.fastq
+
+gut1_R2.fastq
+
+filtered_500_gut2.contigs.fa
+
+gut2.contigs.fa
+
+gut2_R1.fastq
+
+gut2_R2.fastq
+
+megahit/
+
+pear/
+
+----
+
 
 Vamos a ver cuántos reads fueron eliminados (cuántos reads tenían una longitud menor a 500 pb) en este paso.
 
-`` grep ^> final.contigs``
-``grep ^> filtered.contigs``
+`` grep -c "^>" gut*.contigs.fa``
 
-¿Cuántos reads eliminamos?
+gut1.contigs.fa:844
+gut2.contigs.fa:302
+
+`` grep -c "^>" filtered_500_gut*.contigs.fa``
+
+filtered_500_gut1.contigs.fa:149
+filtered_500_gut2.contigs.fa:66
+
+---
 
 #### Validación de ensamble:
 
 __Vamos a crear una carpeta de valoración del ensamble__
-
-``cd ../..``
 
 Asegúrate de estar parado en la carpeta shotgun que hicimos al principio de la práctica
 
@@ -367,17 +436,38 @@ Asegúrate de estar parado en la carpeta shotgun que hicimos al principio de la 
 Una vez ahí, realicemos una carpeta para la valoración del ensamble y generemos una liga simbólica a los cotigs finales de megahit y también a los contigs que filtramos con el script
 
 ``mkdir assessment && cd assessment``
-``ln -s ../assemble/megahit/final.contigs .``
-``ln -s ../assemble/meganit/filtered .``
+
+``mv ../filtered_500_gut*.contigs.fa . && ls``
+
+filtered_500_gut1.contigs.fa
+
+filtered_500_gut2.contigs.fa
+
+---
 
 __La valoración la realizaremos con el programa quast__ (recuerden que ya usaron este programa antes en la unidad de genómica), usando como input a los contigs que creamos con  megahit y como output obtendremos un reporte en un archivo de texto
 
-``~/path_al_programa/quast-4.6.3/quast.py shotgun_filtered_500_contigs.fa -o assemble_report``
+``quast.py filtered_500_gut1.contigs.fa -o gut1_assemble_report``
+
+``quast.py filtered_500_gut2.contigs.fa -o gut2_assemble_report``
+
+``ls``
+
+filtered_500_gut1.contigs.fa
+
+filtered_500_gut2.contigs.fa
+
+gut1_assemble_report/
+
+gut2_assemble_report/
+
+---
 
 Veamos el reporte
 
-``cd assemble_report``
-``less report.txt``
+``less gut1_assemble_report/report.txt``
+
+``less gut2_assemble_report/report.txt``
 
 > N50 debe ser un número alto
 > L50 es el número de cóntigs con longitud igual o mayor a la N50. En otras palabras, es el número mínimo de contigs que cubren la mitad del ensamble. Entre más pequeño el número, mejor (aunque en metagenomas de muestras muy muy complejas, eso sería muy difícil):
@@ -388,28 +478,71 @@ __Elegir un ensamble de mayor o mejor calidad sólo podría tener sentido al com
 
 por lo que vamos a hacer el paso anterior pero comparando los contigs finales antes y después de eliminar las lecturas menos de 500 pb
 
-NOTA: Aquí lo ideal sería comparar los contigs finales de ensambles realizados con diferentes programas (por ejemplo, IDBA y megahit)
+---
 
-``~/path_al_programa/quast-4.6.3/quast.py shotgun_contigs.fa shotgun_filtered_500_contigs.fa -o compare_assemble_report``
+> __NOTA: Aquí lo ideal sería comparar los contigs finales de ensambles realizados con diferentes programas (por ejemplo, IDBA y megahit)__
 
-__Veamos el reporte de comparación de ensambles__
+---
 
-``cd compare_assemble_report``
-``less report.txt``
+``mv ../gut*.contigs.fa .``
+
+``quast.py gut1.contigs.fa filtered_500_gut1.contigs.fa -o gut1_compare_report``
+
+``quast.py gut2.contigs.fa filtered_500_gut2.contigs.fa -o gut2_compare_report``
+
+``ls``
+
+filtered_500_gut1.contigs.fa
+
+filtered_500_gut2.contigs.fa
+
+gut1_assemble_report/
+
+gut2_assemble_report/
+
+gut1_compare_report/
+
+gut2_compare_report/
+
+---
+
+Veamos el reporte
+
+``less gut1_compare_report/report.txt``
+
+``less gut2_compare_report/report.txt``
+
+``cd ..``
+
+---
 
 
 #### Predicción y anotación funcional (¿qué están haciendo -potencialmente-?)
 
 __PREDICCIÓN DE MARCOS DE LECTURA ABIERTOS__
 
-El primer paso antes de anotar los genes, sería el de reconocer las secuencias con marco de lectura abierto dentro de tus reads totales. O sea, encontrar sólo las secuencias que posiblemente se expresen en proteínas.
+El último paso del workflow general sería el de anotar los genes. Para completar el paso, se debe empezar por reconocer las secuencias con marco de lectura abierto dentro de tus reads totales. O sea, encontrar sólo las secuencias que posiblemente se expresen en proteínas.
 
-[MetaGeneMark](http://exon.gatech.edu/GeneMark/license_download.cgi) es un programa que filtra los contigs, reconociendo sólo las secuencias codificantes (elimina incluso los pseudo genes).
+[MetaGeneMark](http://exon.gatech.edu/GeneMark/license_download.cgi) es un programa que filtra los contigs, reconociendo sólo las secuencias codificantes (elimina incluso los pseudo genes) diseñado para datos metagenómcos.
 
 ``mkdir orfs && cd orfs``
-``~/Programs/MetaGeneMark/mgm/gmhmmp``
 
-``amfviundfjdsn  mghfvbdsjhjvddfskjbhdsk``
+``mv ../assessment/filtered_500_gut*.contigs.fa . && ls``
+
+
+Ahora sí corramos el programa de predicción de marcos de lectura:
+
+para la primera muestra:
+
+```~/Programs/MetaGeneMark/mgm/gmhmmp -d -D gut1.nt -a -A gut1.aa -f G -m ~/Programs/MetaGeneMark/mgm/MetaGeneMark_v1.mod filtered_500_gut1.contigs.fa -o gut1.contigs.gff```
+
+para la segunda muestra:
+
+```~/Programs/MetaGeneMark/mgm/gmhmmp -d -D gut2.nt -a -A gut2.aa -f G -m ~/Programs/MetaGeneMark/mgm/MetaGeneMark_v1.mod filtered_500_gut2.contigs.fa -o gut2.contigs.gff```
+
+---
+
+``less gut1.aa``
 
 
 __ANOTACIÓN DE GENES / BASE DE DATOS DE KEGG:__
