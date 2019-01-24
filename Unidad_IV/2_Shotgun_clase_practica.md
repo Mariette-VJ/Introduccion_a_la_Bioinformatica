@@ -242,16 +242,67 @@ Veamos los archivos .txt de salida
 
 ``less gut1_taxonomy.txt``
 
+> #SampleID       Metaphlan2_Analysis
+> k__Bacteria     100.0
+> k__Bacteria|p__Firmicutes       86.78502
+> k__Bacteria|p__Actinobacteria   13.21498
+> k__Bacteria|p__Firmicutes|c__Bacilli    76.57419
+> k__Bacteria|p__Actinobacteria|c__Actinobacteria 13.21498
+> k__Bacteria|p__Firmicutes|c__Clostridia 10.21083
+> k__Bacteria|p__Firmicutes|c__Bacilli|o__Lactobacillales 69.09124
+> k__Bacteria|p__Actinobacteria|c__Actinobacteria|o__Actinomycetales      13.21498
+> k__Bacteria|p__Firmicutes|c__Clostridia|o__Clostridiales        10.21083
+> k__Bacteria|p__Firmicutes|c__Bacilli|o__Bacillales      7.48295
+> k__Bacteria|p__Firmicutes|c__Bacilli|o__Lactobacillales|f__Enterococcaceae      69.09124
+> k__Bacteria|p__Actinobacteria|c__Actinobacteria|o__Actinomycetales|f__Propionibacteriaceae      13.21498
+> k__Bacteria|p__Firmicutes|c__Clostridia|o__Clostridiales|f__Clostridiales_Family_XI_Incertae_Sedis      10.21083
+> k__Bacteria|p__Firmicutes|c__Bacilli|o__Bacillales|f__Staphylococcaceae 7.48295
+
+
 ``less gut2_taxonomy.txt``
 
+> #SampleID       Metaphlan2_Analysis
+> k__Bacteria     100.0
+> k__Bacteria|p__Firmicutes       81.56846
+> k__Bacteria|p__Actinobacteria   18.43154
+> k__Bacteria|p__Firmicutes|c__Bacilli    77.19391
+> k__Bacteria|p__Actinobacteria|c__Actinobacteria 18.43154
+> k__Bacteria|p__Firmicutes|c__Clostridia 4.37455
+> k__Bacteria|p__Firmicutes|c__Bacilli|o__Lactobacillales 71.35411
+> k__Bacteria|p__Actinobacteria|c__Actinobacteria|o__Actinomycetales      18.43154
+> k__Bacteria|p__Firmicutes|c__Bacilli|o__Bacillales      5.83979
+> k__Bacteria|p__Firmicutes|c__Clostridia|o__Clostridiales        4.37455
+> k__Bacteria|p__Firmicutes|c__Bacilli|o__Lactobacillales|f__Enterococcaceae      71.35411
+> k__Bacteria|p__Actinobacteria|c__Actinobacteria|o__Actinomycetales|f__Propionibacteriaceae      18.43154
+> k__Bacteria|p__Firmicutes|c__Bacilli|o__Bacillales|f__Staphylococcaceae 5.83979
+> k__Bacteria|p__Firmicutes|c__Clostridia|o__Clostridiales|f__Clostridiales_Family_XI_Incertae_Sedis      4.37455
 
-__NOTA: Si quisiéramos comparar las abundancias taxonómicas de varios muestreos (más de un metagenoma):__
 
-Deberás generar la salida de anotación taxonómica de metaphlan para ambos metagenomas y concatenar las muestras (el número de muestras a concatenar es ilimitado, _pueden ser 2, 3, 4 o más_):
+__NOTA: Vamos a comparar las abundancias taxonómicas de ambos muestreos:__
 
-Ejemplo, supongamos que tienes tablas de abundancias de tres metagenomas (meta1_profile.txt, meta2_profile.txt y meta3_profile.txt)
+Concatenar las tablas de abundancias con un programa de metaphlan (el número de muestras a concatenar es ilimitado, _pueden ser 2, 3, 4 o más_):
 
-``merge_metaphlan_tables.py meta*_profile.txt > merged_abundance_table.txt``
+```~/Desktop/CURSO_BIOINFO/METAGENOMICA/metaphlan2/utils/merge_metaphlan_tables.py gut*_taxonomy.txt > merged_abundance_table.txt```
+
+
+``less merged_abundance_table.txt``
+
+> ID      gut1_taxonomy   gut2_taxonomy
+> #SampleID       Metaphlan2_Analysis     Metaphlan2_Analysis
+> k__Bacteria     100.0   100.0
+> k__Bacteria|p__Actinobacteria   13.21498        18.43154
+> k__Bacteria|p__Actinobacteria|c__Actinobacteria 13.21498        18.43154
+> k__Bacteria|p__Actinobacteria|c__Actinobacteria|o__Actinomycetales      13.21498        18.43154
+> k__Bacteria|p__Actinobacteria|c__Actinobacteria|o__Actinomycetales|f__Propionibacteriaceae      13.21498        18.43154
+> k__Bacteria|p__Actinobacteria|c__Actinobacteria|o__Actinomycetales|f__Propionibacteriaceae|g__Propionibacteriaceae_unclassified 0.8905  0.0
+> k__Bacteria|p__Actinobacteria|c__Actinobacteria|o__Actinomycetales|f__Propionibacteriaceae|g__Propionibacterium 12.32448        18.43154
+> k__Bacteria|p__Actinobacteria|c__Actinobacteria|o__Actinomycetales|f__Propionibacteriaceae|g__Propionibacterium|s__Propionibacterium_avidum     12.32448        18.43154
+> k__Bacteria|p__Actinobacteria|c__Actinobacteria|o__Actinomycetales|f__Propionibacteriaceae|g__Propionibacterium|s__Propionibacterium_avidum|t__Propionibacterium_avidum_unclassified    12.32448        18.43154
+> k__Bacteria|p__Firmicutes       86.78502        81.56846
+> k__Bacteria|p__Firmicutes|c__Bacilli    76.57419        77.19391
+> k__Bacteria|p__Firmicutes|c__Bacilli|o__Bacillales      7.48295 5.83979
+> k__Bacteria|p__Firmicutes|c__Bacilli|o__Bacillales|f__Staphylococcaceae 7.48295 5.83979
+
 
 
 #### Ensamble 
