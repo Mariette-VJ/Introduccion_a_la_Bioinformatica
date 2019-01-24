@@ -1,6 +1,7 @@
 # Shotgun Metagenomics: clase práctica
 
-Antes de empezar la práctica, prepararemos nuestra carpeta de trabajo
+Antes de empezar la práctica, prepararemos nuestra carpeta de trabajo.
+
 Vamos a dirigirnos a nuestras carpetas personales, en las que hemos estado trabajando
 
 conectarse al servidor con ``ssh``
