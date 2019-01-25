@@ -92,6 +92,8 @@ Empezando desde dónde descargar los datos biológicos
 
 • [NCBI Sequence Read Archive (SRA)](www.ncbi.nlm.nih.gov/sra). Rama de NCBI dedicada a datos de secuenciación masiva.
 
+• [UCSC Genome Browser](https://genome.ucsc.edu/). Repositorio de genomas.
+
 • [BOLD](www.boldsystems.org). Dedicado a datos del "barcode de la vida".
 
 • [MG-RAST](https://www.mg-rast.org/). Datos metagenómicos.
