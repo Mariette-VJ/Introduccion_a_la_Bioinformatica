@@ -1,6 +1,10 @@
 
 # 4. Introducción a la Metagenómica
 
+Mariette Viladomat Jasso
+---
+
+
 #### 4.1. Metagenómica: ¿qué es y para qué sirve?
 
 La metagenómica se ha definido como "el análisis genómico de microorganismos" por extracción directa y clonación de ADN de una comunidad o una muestra de un agregado de microorganismos ([Handelsman 2004](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.333.6836&rep=rep1&type=pdf)). Uno de los trabajos pioneros en el análisis de metagenómica se realizó por [Venter et al.](http://science.sciencemag.org/content/304/5667/66) en el Mar de los Sargazos.
