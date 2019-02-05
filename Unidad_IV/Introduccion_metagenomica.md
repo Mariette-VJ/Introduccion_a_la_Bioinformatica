@@ -274,10 +274,16 @@ La anotación  funcional (de genes presentes) es una descripción del __potencia
 [metagenomic methods for microbial ecologists](https://metagenomic-methods-for-microbial-ecologists.readthedocs.io/en/latest/day-4/)
 
 [INTRODUCTION](http://hulab.ucf.edu/research/projects/metagenomics/introduction.html)
+
 [SAMPLING AND SEQUENCING](http://hulab.ucf.edu/research/projects/metagenomics/samplingsequencing.html)
+
 [ASSEMBLY](http://hulab.ucf.edu/research/projects/metagenomics/assembly.html)
+
 [GENE PREDICTION](http://hulab.ucf.edu/research/projects/metagenomics/geneprediction.html)
+
 [BINNING](http://hulab.ucf.edu/research/projects/metagenomics/binning.html)
+
 [FUNCTIONAL ANNOTATION](http://hulab.ucf.edu/research/projects/metagenomics/function.html)
+
 
 [R code for ecological data analysis](http://userweb.eng.gla.ac.uk/umer.ijaz/bioinformatics/ecological.html)
