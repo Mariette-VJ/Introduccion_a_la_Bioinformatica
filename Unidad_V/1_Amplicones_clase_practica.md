@@ -1,6 +1,5 @@
 # Metabarcoding (amplicones): clase práctica
 
----
 Mariette Viladomat Jasso
 ---
 
