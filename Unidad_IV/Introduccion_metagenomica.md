@@ -271,6 +271,8 @@ La anotación  funcional (de genes presentes) es una descripción del __potencia
 [metagenomics](https://www.cbcb.umd.edu/areas/metagenomics)
 [metagenomic data analysis](https://www.cbcb.umd.edu/research/projects/metagenomic-data-analysis)
 
+[metagenomic methods for microbial ecologists](https://metagenomic-methods-for-microbial-ecologists.readthedocs.io/en/latest/day-4/)
+
 [INTRODUCTION](http://hulab.ucf.edu/research/projects/metagenomics/introduction.html)
 [SAMPLING AND SEQUENCING](http://hulab.ucf.edu/research/projects/metagenomics/samplingsequencing.html)
 [ASSEMBLY](http://hulab.ucf.edu/research/projects/metagenomics/assembly.html)
