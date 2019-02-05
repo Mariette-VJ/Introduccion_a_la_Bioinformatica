@@ -1,7 +1,7 @@
 # Metabarcoding (amplicones): clase práctica
 
 ---
-autor: Mariette Viladomat Jasso
+Mariette Viladomat Jasso
 ---
 
 Antes de empezar la práctica, prepararemos nuestra carpeta de trabajo.
