@@ -1,0 +1,163 @@
+Archaea	Euryarchaeota	Methanobacteria	Methanobacteriales	1
+Archaea	Unclassified Archaea			1
+Bacteria	Acidobacteria	Acidobacteria	Acidobacteriales	5
+Bacteria	Acidobacteria	Holophagae	Holophagales	1
+Bacteria	Acidobacteria	Unclassified Acidobacteria		2
+Bacteria	Actinobacteria	Acidimicrobiia	Acidimicrobiales	5
+Bacteria	Actinobacteria	Actinobacteria	Actinomycetales	15
+Bacteria	Actinobacteria	Actinobacteria	Corynebacteriales	64
+Bacteria	Actinobacteria	Actinobacteria	Frankiales	11
+Bacteria	Actinobacteria	Actinobacteria	Kineosporiales	1
+Bacteria	Actinobacteria	Actinobacteria	Micrococcales	57
+Bacteria	Actinobacteria	Actinobacteria	Micromonosporales	2
+Bacteria	Actinobacteria	Actinobacteria	Propionibacteriales	147
+Bacteria	Actinobacteria	Actinobacteria	Pseudonocardiales	28
+Bacteria	Actinobacteria	Actinobacteria	Streptomycetales	13
+Bacteria	Actinobacteria	Actinobacteria	Streptosporangiales	5
+Bacteria	Actinobacteria	Actinobacteria	Unclassified Actinobacteria	78
+Bacteria	Actinobacteria	Coriobacteriia	Coriobacteriales	1
+Bacteria	Actinobacteria	Rubrobacteria	Rubrobacterales	1
+Bacteria	Actinobacteria	Thermoleophilia	Solirubrobacterales	4
+Bacteria	Actinobacteria	Unclassified Actinobacteria		7
+Bacteria	Aquificae	Aquificae	Aquificales	10
+Bacteria	Bacteroidetes	Bacteroidia	Bacteroidales	65
+Bacteria	Bacteroidetes	Cytophagia	Cytophagales	180
+Bacteria	Bacteroidetes	Cytophagia	Order II Incertae Sedis	2
+Bacteria	Bacteroidetes	Cytophagia	Unclassified Cytophagia	3
+Bacteria	Bacteroidetes	Flavobacteria	Flavobacteriales	208
+Bacteria	Bacteroidetes	Flavobacteria	Unclassified Flavobacteria	1
+Bacteria	Bacteroidetes	Sphingobacteriia	Sphingobacteriales	412
+Bacteria	Bacteroidetes	Sphingobacteriia	Unclassified Sphingobacteriia	6
+Bacteria	Bacteroidetes	Unclassified Bacteroidetes		264
+Bacteria	Candidate division TM7	candidate division TM7 genomosp. GTL1	Unclassified candidate division TM7 genomosp. GTL1	65
+Bacteria	Chlamydiae	Chlamydiae	Chlamydiales	27
+Bacteria	Chlorobi	Chlorobia	Chlorobiales	268
+Bacteria	Chlorobi	Unclassified Chlorobi		6
+Bacteria	Chloroflexi	Anaerolineae	Anaerolineales	73
+Bacteria	Chloroflexi	Chloroflexi	Chloroflexales	15
+Bacteria	Chloroflexi	Chloroflexi	Herpethosiphonales	5
+Bacteria	Chloroflexi	Class Incertae Sedis	Order Incertae Sedis	10
+Bacteria	Chloroflexi	Dehalococcoidetes	Order Incertae Sedis	23
+Bacteria	Chloroflexi	Ktedonobacteria	Ktedonobacterales	12
+Bacteria	Chloroflexi	Thermomicrobia	Sphaerobacterales	4
+Bacteria	Chloroflexi	Thermomicrobia	Thermomicrobiales	3
+Bacteria	Chloroflexi	Thermomicrobia	Unclassified Thermomicrobia	4
+Bacteria	Chloroflexi	Unclassified Chloroflexi		40
+Bacteria	Cyanobacteria	Cyanobacteria	SubsectionI	17
+Bacteria	Cyanobacteria	Cyanobacteria	SubsectionIII	5
+Bacteria	Cyanobacteria	Cyanobacteria	SubsectionIV	51
+Bacteria	Cyanobacteria	Cyanobacteria	Unclassified Cyanobacteria	7
+Bacteria	Cyanobacteria	Unclassified Cyanobacteria		3
+Bacteria	Deferribacteres	Deferribacteres	Deferribacterales	4
+Bacteria	Deferribacteres	Unclassified Deferribacteres		4
+Bacteria	Deinococcus-Thermus	Deinococci	Deinococcales	4
+Bacteria	Deinococcus-Thermus	Deinococci	Thermales	7
+Bacteria	Deinococcus-Thermus	Deinococci	Unclassified Deinococci	1
+Bacteria	Deinococcus-Thermus	Unclassified Deinococcus-Thermus		1
+Bacteria	Elusimicrobia	Elusimicrobia	Elusimicrobiales	1
+Bacteria	Firmicutes	Bacilli	Bacillales	109
+Bacteria	Firmicutes	Bacilli	Lactobacillales	110
+Bacteria	Firmicutes	Bacilli	Unclassified Bacilli	7
+Bacteria	Firmicutes	Clostridia	Candidatus Desulforudis	1
+Bacteria	Firmicutes	Clostridia	Clostridiales	210
+Bacteria	Firmicutes	Clostridia	Halanaerobiales	9
+Bacteria	Firmicutes	Clostridia	Natranaerobiales	5
+Bacteria	Firmicutes	Clostridia	Thermoanaerobacterales	24
+Bacteria	Firmicutes	Clostridia	Unclassified Clostridia	23
+Bacteria	Firmicutes	Erysipelotrichi	Erysipelotrichales	11
+Bacteria	Firmicutes	Unclassified Firmicutes		47
+Bacteria	Fusobacteria	Fusobacteria	Fusobacteriales	21
+Bacteria	Fusobacteria	Unclassified Fusobacteria		2
+Bacteria	Lentisphaerae	Lentisphaeria	Lentisphaerales	3
+Bacteria	Nitrospirae	Nitrospira	Nitrospirales	4
+Bacteria	Planctomycetes	Planctomycetacia	Brocadiales	1
+Bacteria	Planctomycetes	Planctomycetacia	Planctomycetales	139
+Bacteria	Planctomycetes	Planctomycetacia	Unclassified Planctomycetacia	2
+Bacteria	Proteobacteria	Alphaproteobacteria	Caulobacterales	90
+Bacteria	Proteobacteria	Alphaproteobacteria	Rhizobiales	517
+Bacteria	Proteobacteria	Alphaproteobacteria	Rhodobacterales	139
+Bacteria	Proteobacteria	Alphaproteobacteria	Rhodospirillales	135
+Bacteria	Proteobacteria	Alphaproteobacteria	Rickettsiales	13
+Bacteria	Proteobacteria	Alphaproteobacteria	Sphingomonadales	122
+Bacteria	Proteobacteria	Alphaproteobacteria	Thiotrichales	1
+Bacteria	Proteobacteria	Alphaproteobacteria	Unclassified Alphaproteobacteria	125
+Bacteria	Proteobacteria	Betaproteobacteria	Burkholderiales	1343
+Bacteria	Proteobacteria	Betaproteobacteria	Hydrogenophilales	2
+Bacteria	Proteobacteria	Betaproteobacteria	Methylophilales	189
+Bacteria	Proteobacteria	Betaproteobacteria	Neisseriales	213
+Bacteria	Proteobacteria	Betaproteobacteria	Nitrosomonadales	192
+Bacteria	Proteobacteria	Betaproteobacteria	Rhodocyclales	15525
+Bacteria	Proteobacteria	Betaproteobacteria	Unclassified Betaproteobacteria	7511
+Bacteria	Proteobacteria	Deltaproteobacteria	Bdellovibrionales	12
+Bacteria	Proteobacteria	Deltaproteobacteria	Desulfarculus baarsii DSM 2075	1
+Bacteria	Proteobacteria	Deltaproteobacteria	Desulfobacterales	34
+Bacteria	Proteobacteria	Deltaproteobacteria	Desulfovibrionales	24
+Bacteria	Proteobacteria	Deltaproteobacteria	Desulfurellales	24
+Bacteria	Proteobacteria	Deltaproteobacteria	Desulfuromonadales	44
+Bacteria	Proteobacteria	Deltaproteobacteria	Myxococcales	25
+Bacteria	Proteobacteria	Deltaproteobacteria	Syntrophobacterales	10
+Bacteria	Proteobacteria	Deltaproteobacteria	Unclassified Deltaproteobacteria	33
+Bacteria	Proteobacteria	Epsilonproteobacteria	Campylobacterales	26
+Bacteria	Proteobacteria	Epsilonproteobacteria	Nautiliales	4
+Bacteria	Proteobacteria	Epsilonproteobacteria	Unclassified Epsilonproteobacteria	7
+Bacteria	Proteobacteria	Gammaproteobacteria	Acidithiobacillales	27
+Bacteria	Proteobacteria	Gammaproteobacteria	Aeromonadales	24
+Bacteria	Proteobacteria	Gammaproteobacteria	Alteromonadales	25
+Bacteria	Proteobacteria	Gammaproteobacteria	Chromatiales	309
+Bacteria	Proteobacteria	Gammaproteobacteria	Enterobacteriales	92
+Bacteria	Proteobacteria	Gammaproteobacteria	HdN1	1
+Bacteria	Proteobacteria	Gammaproteobacteria	Legionellales	31
+Bacteria	Proteobacteria	Gammaproteobacteria	Methylococcales	69
+Bacteria	Proteobacteria	Gammaproteobacteria	Oceanospirillales	64
+Bacteria	Proteobacteria	Gammaproteobacteria	Order Incertae Sedis	11
+Bacteria	Proteobacteria	Gammaproteobacteria	Pasteurellales	12
+Bacteria	Proteobacteria	Gammaproteobacteria	Pseudomonadales	70
+Bacteria	Proteobacteria	Gammaproteobacteria	Salinisphaerales	2
+Bacteria	Proteobacteria	Gammaproteobacteria	Thiotrichales	8
+Bacteria	Proteobacteria	Gammaproteobacteria	Unclassified Gammaproteobacteria	562
+Bacteria	Proteobacteria	Gammaproteobacteria	Vibrionales	29
+Bacteria	Proteobacteria	Gammaproteobacteria	Xanthomonadales	1142
+Bacteria	Proteobacteria	Unclassified Proteobacteria		1381
+Bacteria	Spirochaetes	Spirochaetes	Candidatus Cloacamonas	2
+Bacteria	Spirochaetes	Spirochaetes	Spirochaetales	58
+Bacteria	Spirochaetes	Unclassified Spirochaetes		6
+Bacteria	Synergistetes	Synergistia	Synergistales	17
+Bacteria	Tenericutes	Mollicutes	Acholeplasmatales	2
+Bacteria	Tenericutes	Mollicutes	Entomoplasmatales	2
+Bacteria	Tenericutes	Mollicutes	Mycoplasmatales	15
+Bacteria	Tenericutes	Mollicutes	Unclassified Mollicutes	2
+Bacteria	Thermodesulfobacteria	Thermodesulfobacteria	Thermodesulfobacteriales	1
+Bacteria	Thermotogae	Thermotogae	Thermotogales	11
+Bacteria	Unclassified Bacteria			1211
+Bacteria	Verrucomicrobia	Candidatus Methylacidiphilum	Methylacidiphilum infernorum V4	1
+Bacteria	Verrucomicrobia	Candidatus Pedosphaera	Oikopleura dioica	3
+Bacteria	Verrucomicrobia	Candidatus Pedosphaera	Pedosphaera parvula Ellin514	4
+Bacteria	Verrucomicrobia	Opitutae	Opitutales	95
+Bacteria	Verrucomicrobia	Opitutae	Puniceicoccales	1
+Bacteria	Verrucomicrobia	Opitutae	Unclassified Opitutae	11
+Bacteria	Verrucomicrobia	Spartobacteria	Chthoniobacterales	5
+Bacteria	Verrucomicrobia	Unclassified Verrucomicrobia		12
+Bacteria	Verrucomicrobia	Verrucomicrobiae	Verrucomicrobiales	36
+Chloroplast	Unclassified Chloroplast			50
+Eukaryota	Alveolata	Apicomplexa	Aconoidasida	6
+Eukaryota	Alveolata	Unclassified Alveolata		1
+Eukaryota	Fungi	Dikarya	Unclassified Dikarya	2
+Eukaryota	Fungi	Unclassified Fungi		3
+Eukaryota	Haptophyceae	Unclassified Haptophyceae		2
+Eukaryota	Metazoa	Annelida	Polychaeta	1
+Eukaryota	Metazoa	Cnidaria	Anthozoa	1
+Eukaryota	Metazoa	Cnidaria	Hydrozoa	1
+Eukaryota	Metazoa	Nematoda	Chromadorea	3
+Eukaryota	Metazoa	Platyhelminthes	Turbellaria	4
+Eukaryota	Metazoa	Rotifera	Monogononta	1
+Eukaryota	Metazoa	Unclassified Metazoa		5
+Eukaryota	Rhodophyta	Bangiophyceae	Cyanidiales	1
+Eukaryota	Unclassified Eukaryota			20
+Eukaryota	Unikonta	Amoebozoa	Tubulinea	5
+Eukaryota	Viridiplantae	Chlorophyta	Chlorophyceae	2
+Eukaryota	Viridiplantae	Chlorophyta	Unclassified Chlorophyta	2
+Eukaryota	Viridiplantae	Streptophyta	Embryophyta	1
+Eukaryota	Viridiplantae	Unclassified Viridiplantae		1
+Mitochondria				3
+Mitochondria	Unclassified Mitochondria			25
+Unknown				147
