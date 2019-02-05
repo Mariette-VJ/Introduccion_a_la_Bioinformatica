@@ -1,5 +1,9 @@
 # Shotgun Metagenomics: clase práctica
 
+ Mariette Viladomat Jasso
+---
+
+
 Antes de empezar la práctica, prepararemos nuestra carpeta de trabajo.
 
 Vamos a dirigirnos a nuestras carpetas personales, en las que hemos estado trabajando
